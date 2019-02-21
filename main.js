@@ -20,10 +20,9 @@ function createWindow () {
 
 
   mainWindow.webContents.on("did-finish-load", function() {
-    console.log('finished loading');
-    console.log(mainWindow.webContents.getPrinters());
+     console.log('loading finished');
      
-    mainWindow.webContents.print({ silent: true, printBackground: false, deviceName: 'HP LaserJet 1020' })
+    mainWindow.webContents.print({ silent: false, printBackground: false, deviceName: 'PDF' })
   })
 
   // Open the DevTools.
