@@ -22,7 +22,7 @@ function createWindow () {
   mainWindow.webContents.on("did-finish-load", function() {
      console.log('loading finished');
      
-    mainWindow.webContents.print({ silent: false, printBackground: false, deviceName: 'PDF' })
+    mainWindow.webContents.print({ silent: true, printBackground: false, deviceName: 'PDF' })
   })
 
   // Open the DevTools.
